@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<p>
+    <h3>あそびかた</h3>
+</p>
+<p>「録音する」ボタンをクリックしてから5秒間、周囲の音を録音します。</p>
+<p>録音完了後、自動でページ遷移し、フーリエ変換後の画像を表示します。</p>
+
+<form action="{{ url_for('recbutton') }}" method="POST" enctype="multipart/form-data">
+    <input type="submit" value="録音する">
+</form>
+{% endblock %}

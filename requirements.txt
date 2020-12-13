@@ -1,0 +1,15 @@
+google-api-python-client
+matplotlib
+more-itertools
+nara-wpe
+numpy
+pyaudio
+pyroomacoustics
+scipy
+sounddevice
+SpeechRecognition
+flask
+Jinja2
+itsdangerous
+MarkupSafe
+Werkzeug

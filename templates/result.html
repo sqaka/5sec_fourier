@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Foorier images</h2>
+
+<img src="{{ url_for('static', filename=path) }}">
+
+<p>
+    <a href="{{ url_for('playbutton', dt_txt=dt_txt) }}">元音声を再生する</a>
+</p>
+<p>
+    <a href="{{ url_for('index') }}">もどる</a>
+</p>
+{% endblock %}
