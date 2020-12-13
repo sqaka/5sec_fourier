@@ -2,6 +2,7 @@ matplotlib
 more-itertools
 numpy
 scipy
+pyaudio
 sounddevice
 flask
 Jinja2
