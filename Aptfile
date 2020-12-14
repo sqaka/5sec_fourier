@@ -1,5 +1,7 @@
 gcc
 g++
 portaudio19-dev
+python-all-dev
 python3-all-dev
 python-pyaudio
+python3-pyaudio
