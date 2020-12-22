@@ -5,7 +5,7 @@ import sounddevice as sd
 
 REC_TIME = 5
 SAMPLE_RATE = 16000
-SAVE_DIR = 'static/data/'
+SAVE_DIR = 'src/static/data/'
 
 
 def rec_sound():

@@ -3,8 +3,8 @@ import scipy.signal as sp
 import numpy as np
 import matplotlib.pyplot as plt
 
-DATA_DIR = 'static/data/'
-SAVE_DIR = 'static/image/'
+DATA_DIR = 'src/static/data/'
+SAVE_DIR = 'src/static/image/'
 NPERSEG = 512
 NOVERLAP = NPERSEG // 2
 

@@ -1,11 +1,11 @@
 import os
 from flask import Flask, render_template, request, send_from_directory
 
-from utils.auto_eraser import main as auto_eraser
-from utils.sound_rec import main as sound_rec
-from utils.make_fourier import main as make_fourier
+from src.utils.auto_eraser import main as auto_eraser
+from src.utils.sound_rec import main as sound_rec
+from src.utils.make_fourier import main as make_fourier
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='src/templates')
 
 
 @app.route('/')
@@ -28,7 +28,7 @@ def recbutton():
 @app.route('/result/<dt_txt>')
 def playbutton(dt_txt):
     file = dt_txt + '.wav'
-    return send_from_directory('static/data', file)
+    return send_from_directory('src/static/data', file)
 
 
 def main():

@@ -1,8 +1,8 @@
 import os
 from operator import itemgetter
 
-DATA_PATH = 'static/data/'
-IMAGE_PATH = 'static/image/'
+DATA_PATH = 'src/static/data/'
+IMAGE_PATH = 'src/static/image/'
 MAX_COUNT = 10
 
 
@@ -19,7 +19,8 @@ def erase_data():
 def erase_image():
     image_list = []
     for imagefile in os.listdir(IMAGE_PATH):
-        image_list.append([imagefile, os.path.getctime(IMAGE_PATH + imagefile)])
+        image_list.append(
+            [imagefile, os.path.getctime(IMAGE_PATH + imagefile)])
     image_list.sort(key=itemgetter(1), reverse=True)
     for i, imagefile in enumerate(image_list):
         if i > MAX_COUNT - 1:
